@@ -1,0 +1,906 @@
+/* styles.css */
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap);
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002902;
+    padding: 20px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero-section {
+    background: url('jjjj.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.hero-section h1 {
+    margin: 0; /* Menghapus margin */
+    padding: 10px 0; /* Menambah padding atas dan bawah */
+}
+
+.hero-section p.deskripsi {
+    margin: 0; /* Menghapus margin */
+    padding: 10px 0 30px 0; /* Menambah padding atas dan bawah */
+}
+
+.cta-button {
+    background-color: #f8d472;
+    font-weight: bold;
+    color: #002902;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 10;
+    margin: 5px;
+}
+
+.cta-button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.product-section, .jual-kotoran-section, .tips-section, .transaction-section {
+    background: #f8d472;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: 300px;
+    border: 7px solid #ddd;
+    border-radius: 5px;
+    background: #ddd;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-item:hover {
+    transform: translateY(-10px); /* Efek terangkat */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar */
+}
+
+.product-section h2 {
+    padding: 10px;
+    color:#002902;
+}
+
+.product-item h3 {
+    padding: 10px;
+    background-color: #026405;
+    color: white;
+    margin: 0;
+}
+
+.product-item p {
+    padding: 10px;
+}
+
+.product-button {
+    display: block;
+    background-color: #026405;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.jual-kotoran-section {
+    background: url('jjjj.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.jual-kotoran-section h1 {
+    margin: 0; /* Menghapus margin */
+    padding: 10px 0; /* Menambah padding atas dan bawah */
+}
+
+.jual-kotoran-section p.deskripsi {
+    margin: 0; /* Menghapus margin */
+    padding: 10px 0 30px 0; /* Menambah padding atas dan bawah */
+}
+
+.tips-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.tip-item {
+    width: 300px;
+    text-align: center;
+    border: 7px solid #ddd;
+    border-radius: 5px;
+    background: #ddd;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tips-section h2 {
+    padding: 10px;
+    color:#002902;
+}
+
+.tip-item h3 {
+    padding: 10px;
+    background-color: #026405;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.read-more {
+    color: #026405;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #002902;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+
+.wrapper {
+    width: 75%;
+    background: transparent;
+    border: 2px solid rgba(58, 54, 54, 0.2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #002902;
+    border-radius: 10px;
+    padding: 50px 40px;
+    
+}
+
+.deskripsi {
+    color: rgb(255, 255, 255);
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.login-section {
+    background: url('jjjj.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid rgba(58, 54, 54, 0.2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #f8d472;
+    border-radius: 10px;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 36px;
+    color: #002902;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #002902;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-button {
+    width: 100%;
+    font-weight: bold;
+    background-color: #f8d472; /* Warna yang seragam dengan tombol lainnya */
+    color: #002902;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+.login-button:hover {
+    background-color: #e2b63d; /* Warna gelap saat hover */
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.register-link {
+    margin-top: 20px;
+}
+
+.register-link p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.register-link a {
+    color: #026405;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/*register*/
+
+.register-section {
+    background: url('jjjj.jpg') no-repeat center center/cover;
+    height: 170vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.register-wrapper {
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid rgba(58, 54, 54, 0.2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #f8d472;
+    border-radius: 10px;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.register-container h1 {
+    font-size: 36px;
+    color: #002902;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #002902;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.register-button {
+    width: 100%;
+    background-color: #026405; 
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+.register-button:hover {
+    background-color: #024a03; /* Warna gelap saat hover */
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-link a {
+    color: #026405;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.profile-container {
+    padding: 50px 20px;
+    background: #f8d472;
+}
+
+.profile-section {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section h1 {
+    text-align: center;
+    color: #002902;
+}
+
+.profile-info, .password-section{
+    margin-top: 20px;
+}
+
+.profile-info h2, .password-section h2{
+    color: #002902;
+}
+
+.profile-form, .password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile-form label, .password-form label {
+    font-weight: bold;
+    color: #002902;
+}
+
+.profile-form input, .password-form input, .profile-form textarea {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 97%;
+}
+
+.profile-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.save-button {
+    background-color: #026405;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: #014003;
+}
+
+
+.product-detail-section {
+    background: url('jjjj.jpg') no-repeat center center/cover;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.product-detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.product-detail-image {
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.product-detail-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-detail-info {
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.product-detail-info h1 {
+    color: #002902;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.product-detail-info p {
+    margin-bottom: 20px;
+}
+
+.product-detail-info strong {
+    font-size: 1.2em;
+    color: #002902;
+}
+
+.transaction-section {
+    background: url('jjjj.jpg') no-repeat center center/cover;
+}
+
+.transactions-section h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.transactions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.transaction-item {
+    border: 2px solid #002902;
+    border-radius: 10px;
+    padding: 20px;
+    background:#f8d472;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transaction-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.transaction-item h3 {
+    color: #002902;
+    margin-bottom: 10px;
+}
+
+.transaction-item p {
+    margin: 5px 0;
+}
+
+.transaksi-section {
+    background: url('jjjj.jpg') no-repeat center center/cover;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.transaksi-wrapper {
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid rgba(58, 54, 54, 0.2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #000000;
+    border-radius: 10px;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.transaksi-container h1 {
+    font-size: 36px;
+    color: #002902;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #002902;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.transaksi-button {
+    width: 100%;
+    background-color: #026405; 
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+.transaksi-button:hover {
+    background-color: #024a03; /* Warna gelap saat hover */
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.jual-section {
+    background: url('jjjj.jpg') no-repeat center center/cover;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.jual-wrapper {
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid rgba(58, 54, 54, 0.2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #000000;
+    border-radius: 10px;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.jual-container h1 {
+    font-size: 36px;
+    color: #002902;
+    margin-bottom: 20px;
+}
+
+.jual-button {
+    width: 100%;
+    background-color: #026405; 
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+.jual-button:hover {
+    background-color: #024a03; /* Warna gelap saat hover */
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-list {
+        flex-direction: column;
+    }
+
+    .tips-list {
+        flex-direction: column;
+    }
+
+    .product-item, .tip-item {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .login-wrapper {
+        padding: 30px 20px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .login-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .register-wrapper {
+        padding: 30px 20px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .register-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .profile-section {
+        padding: 20px;
+    }
+
+    .profile-form, .password-form {
+        gap: 10px;
+    }
+
+    .product-detail-container {
+        flex-direction: column;
+    }
+
+    .product-item, .tip-item {
+        width: 90%;
+    }
+
+    .hero-section, .jual-kotoran-section {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .login-wrapper, .register-wrapper {
+        padding: 20px;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 10px;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
+
+    .product-item h3, .product-item p {
+        padding: 5px;
+    }
+
+    .product-button {
+        padding: 8px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .social-media a {
+        margin: 5px;
+    }
+
+    .register-section {
+        padding: 10px
+    }
+
+    .register-wrapper {
+        padding: 20px 10px;
+    }
+
+    .input-group input {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .register-button {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .login-section {
+        padding: 10px
+    }
+
+    .login-wrapper {
+        padding: 20px 10px;
+    }
+
+    .input-group input {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .login-button {
+        padding: 6px;
+        font-size: 12px;
+    }
+}
+
+/* Existing styles */
+/* ... (previous CSS content) ... */
+
+/* Artikel Detail Section */
+.artikel-detail-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.artikel-detail-section h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #002902;
+}
+
+.artikel-detail-section .author {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.artikel-detail-section .artikel-gambar {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.artikel-detail-section .artikel-konten {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    white-space: pre-wrap;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .artikel-detail-section {
+        padding: 10px;
+    }
+
+    .artikel-detail-section h1 {
+        font-size: 1.5em;
+    }
+
+    .artikel-detail-section .artikel-konten {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .artikel-detail-section {
+        padding: 5px;
+    }
+
+    .artikel-detail-section h1 {
+        font-size: 1.2em;
+    }
+
+    .artikel-detail-section .artikel-konten {
+        font-size: 0.9em;
+    }
+}
+

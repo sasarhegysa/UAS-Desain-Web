@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jual Kotoran Ternak - Rhestu Tani</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="RhestuTani.png" alt="Rhestu Tani Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Beranda</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="jual.html">Jual Kotoran</a></li>
+                <li><a href="tips.html">Tips & Artikel</a></li>
+                <li><a href="profil.html">Profil Saya</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="index.html">Keluar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="transaksi-section">
+        <div class="transaksi-wrapper">
+            <div class="transaksi-container">
+                <h1>Transaksi</h1>
+                <form>
+                    <div class="form-group">
+                        <h3>Detail Pengiriman</h3>
+                        <label for="nama">Nama Lengkap:</label>
+                        <input type="text" id="nama" name="nama" required>
+                        <label for="telepon">Nomor Telepon:</label>
+                        <input type="tel" id="telepon" name="telepon" required>
+                        <label for="alamat">Alamat:</label>
+                        <input type="text" id="alamat" name="alamat" required>
+                        <label for="kota">Kota:</label>
+                        <input type="text" id="kota" name="kota" required>
+                        <label for="kode-pos">Kode Pos:</label>
+                        <input type="text" id="kode-pos" name="kode_pos" required>
+                    </div>
+                    <div class="form-group">
+                        <h3>Detail Produk</h3>
+                        <label for="produk">Produk:</label>
+                        <input type="text" id="produk" name="produk" value="{{ produk }}" readonly>
+                        <label for="jumlah">Jumlah (Kg):</label>
+                        <input type="number" id="jumlah" name="jumlah" required>
+                        <label for="total-harga">Total Harga (Rp):</label>
+                        <input type="number" id="total-harga" name="total_harga" value="{{ total_harga }}" readonly>
+                    </div>
+                    <div class="form-group">
+                        <h3>Metode Pembayaran</h3>
+                        <label for="metode-pembayaran">Pilih Metode Pembayaran:</label>
+                        <select id="metode-pembayaran" name="metode_pembayaran" required>
+                            <option value="transfer-bank">Transfer Bank</option>
+                            <option value="cod">Cash on Delivery (COD)</option>
+                            <option value="ewallet">E-Wallet</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="transaksi-button">Kirim</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 RhestuTani. All rights reserved.</p>
+            <div class="social-media">
+                <a href="mailto:rhegysajuniartha@gmail.com">Email</a>
+                <a href="https://instagram.com/rhegysa">Instagram</a>
+                <a href="https://wa.me/085604995750">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya - Rhestu Tani</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="dashboard.html">
+                    <img src="RhestuTani.png" alt="Rhestu Tani Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Beranda</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="jual.html">Jual Kotoran</a></li>
+                <li><a href="tips.html">Tips & Artikel</a></li>
+                <li><a href="profil.html">Profil Saya</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="index.html">Keluar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        <section class="profile-section">
+            <h1>Profil Saya</h1>
+
+            <div class="profile-info">
+                <h2>Informasi Pengguna</h2>
+                <form class="profile-form">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" value="Rhegysa Alvyanthi Juniartha" disabled>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="rhegysajuniartha@gmail.com" disabled>
+
+                    <label for="phone">Nomor Telepon:</label>
+                    <input type="tel" id="phone" name="phone" value="+62 81234567890">
+                    
+                    <label for="address">Alamat:</label>
+                    <textarea id="address" name="address">Jl. Contoh No. 123, Kota, Provinsi</textarea>
+
+                    <button type="button" class="save-button">Simpan Perubahan</button>
+                </form>
+            </div>
+
+            <div class="password-section">
+                <h2>Ubah Kata Sandi</h2>
+                <form class="password-form">
+                    <label for="current-password">Kata Sandi Saat Ini:</label>
+                    <input type="password" id="current-password" name="current-password">
+
+                    <label for="new-password">Kata Sandi Baru:</label>
+                    <input type="password" id="new-password" name="new-password">
+
+                    <label for="confirm-password">Konfirmasi Kata Sandi Baru:</label>
+                    <input type="password" id="confirm-password" name="confirm-password">
+
+                    <button type="button" class="save-button">Ubah Kata Sandi</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 RhestuTani. All rights reserved.</p>
+            <div class="social-media">
+                <a href="mailto:rhegysajuniartha@gmail.com">Email</a>
+                <a href="https://instagram.com/rhegysa">Instagram</a>
+                <a href="https://wa.me/085604995750">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
